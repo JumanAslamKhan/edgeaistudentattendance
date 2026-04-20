@@ -76,6 +76,7 @@ Open `http://localhost:8000` after the container starts.
 - The container listens on port `8000`.
 - Use HTTPS on the deployed site so browser camera access works on mobile.
 - The cloud build uses `requirements.cloud.txt`, which swaps in `opencv-python-headless` and `gunicorn` for server hosting.
+- If Render fails with "Ran out of memory" while building wheels, redeploy with this Docker setup (Python 3.10 + binary `dlib`) to avoid source compilation.
 
 ---
 
