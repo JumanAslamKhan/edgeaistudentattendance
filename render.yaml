@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: studentattendanceedgeai
+    env: docker
+    autoDeploy: true
+    dockerfilePath: ./Dockerfile
+    plan: starter
