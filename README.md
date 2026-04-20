@@ -57,6 +57,28 @@ python main.py
 
 ---
 
+## Cloud Hosting
+
+This project is ready to run in a Docker-based cloud host such as Render, Railway, Fly.io, or Docker on your own VM.
+
+### Build and run locally with Docker
+
+```bash
+docker build -t studentattendanceedgeai .
+docker run -p 8000:8000 studentattendanceedgeai
+```
+
+Open `http://localhost:8000` after the container starts.
+
+### Cloud notes
+
+- The web app entrypoint is `web_app:app`.
+- The container listens on port `8000`.
+- Use HTTPS on the deployed site so browser camera access works on mobile.
+- The cloud build uses `requirements.cloud.txt`, which swaps in `opencv-python-headless` and `gunicorn` for server hosting.
+
+---
+
 ## Controls
 
 | Key | Action |

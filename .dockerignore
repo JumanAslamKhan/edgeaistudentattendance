@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+attendance.db
+.git/
+.gitignore
+*.log
+node_modules/
+dist/
+build/
